@@ -1,0 +1,13 @@
+:root {
+  --space-small: 0.5rem;
+  --space-medium: 1rem;
+  --space-large: 2rem;
+
+  --font-base: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  --radius-base: 12px;
+
+  --shadow-card: 0 4px 12px rgb(0 0 0 / 0.08);
+
+  --transition-fast: 0.2s ease;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Layered Components</title>
+
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+
+  <header>
+    <h1 class="text-center">Layered Components Demo</h1>
+
+    <nav>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Temples</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Featured Cards</h2>
+
+      <div class="cards">
+
+        <article class="card">
+          <h3>Modern CSS</h3>
+
+          <p>
+            Learn how to organize your styles using
+            layers, tokens, utilities, and components.
+          </p>
+
+          <button>Read More</button>
+        </article>
+
+        <article class="card">
+          <h3>Responsive Design</h3>
+
+          <p>
+            Build layouts that adapt automatically
+            to different screen sizes with modern CSS.
+          </p>
+
+          <button>Explore</button>
+        </article>
+
+        <article class="card">
+          <h3>Accessible UI</h3>
+
+          <p>
+            Add proper focus states and keyboard
+            navigation support to every interface.
+          </p>
+
+          <button disabled>Coming Soon</button>
+        </article>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Temple Gallery</h2>
+
+      <div class="temples">
+
+        <article class="temple-card">
+          <img
+            src="https://picsum.photos/600/400?random=1"
+            alt="Temple exterior"
+          />
+
+          <h3>Mountain Temple</h3>
+
+          <p>
+            A peaceful temple surrounded by mountains
+            and nature.
+          </p>
+        </article>
+
+        <article class="temple-card">
+          <img
+            src="https://picsum.photos/600/400?random=2"
+            alt="Temple at sunset"
+          />
+
+          <h3>Sunset Temple</h3>
+
+          <p>
+            Beautiful architecture illuminated by the
+            evening sky.
+          </p>
+        </article>
+
+        <article class="temple-card">
+          <img
+            src="https://picsum.photos/600/400?random=3"
+            alt="Temple gardens"
+          />
+
+          <h3>Garden Temple</h3>
+
+          <p>
+            Quiet gardens and reflective pools create
+            a calm atmosphere.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact Form</h2>
+
+      <form>
+
+        <div>
+          <label for="name">Name</label>
+
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+          />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+        </div>
+
+        <div>
+          <label for="topic">Topic</label>
+
+          <select id="topic" name="topic">
+            <option value="">Choose a topic</option>
+            <option value="css">CSS</option>
+            <option value="accessibility">Accessibility</option>
+            <option value="responsive">Responsive Design</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write your message"
+          ></textarea>
+        </div>
+
+        <button type="submit">
+          Send Message
+        </button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="text-center mt-large">
+    <p>
+      &copy; 2026 Layered Components Assignment
+    </p>
+  </footer>
+
+</body>
+</html>

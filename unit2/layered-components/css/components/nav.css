@@ -1,0 +1,29 @@
+nav {
+  background: var(--color-primary);
+  padding: var(--space-medium);
+  border-radius: var(--radius-base);
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-medium);
+    list-style: none;
+    padding: 0;
+  }
+
+  a {
+    color: white;
+    padding: var(--space-small) var(--space-medium);
+    border-radius: var(--radius-base);
+    transition: background var(--transition-fast);
+
+    &:not(.active):hover {
+      background: rgb(255 255 255 / 0.15);
+    }
+
+    &:focus-visible {
+      outline: 3px solid white;
+      outline-offset: 3px;
+    }
+  }
+}

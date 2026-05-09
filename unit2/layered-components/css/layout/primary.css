@@ -1,0 +1,14 @@
+main {
+  width: min(1100px, 90%);
+  margin-inline: auto;
+  padding-block: var(--space-large);
+}
+
+header,
+footer {
+  padding: var(--space-large);
+}
+
+section + section {
+  margin-top: var(--space-large);
+}
