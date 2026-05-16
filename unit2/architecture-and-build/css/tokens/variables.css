@@ -1,0 +1,15 @@
+:root {
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+    --space-xl: 4rem;
+
+    --font-base: "Segoe UI", sans-serif;
+
+    --radius-sm: 0.5rem;
+    --radius-md: 1rem;
+
+    --shadow-md: 0 4px 10px rgba(0,0,0,0.08);
+
+    --max-width: 1200px;
+}
