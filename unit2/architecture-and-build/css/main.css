@@ -1,14 +1,14 @@
 @layer tokens, base, layout, components, utilities;
 
-@import url("./tokens/colors.css") layer(tokens);
-@import url("./tokens/variables.css") layer(tokens);
+@import url("unit2/architecture-and-build/css/tokens/colors.css") layer(tokens);
+@import url("unit2/architecture-and-build/css/tokens/variables.css") layer(tokens);
 
-@import url("./base/reset.css") layer(base);
-@import url("./base/elements.css") layer(base);
+@import url("unit2/architecture-and-build/css/base/reset.css") layer(base);
+@import url("unit2/architecture-and-build/css/base/elements.css") layer(base);
 
-@import url("./layout/layout.css") layer(layout);
+@import url("unit2/architecture-and-build/css/layout/layout.css") layer(layout);
 
-@import url("./components/cards.css") layer(components);
+@import url("unit2/architecture-and-build/css/components/cards.css") layer(components);
 
-@import url("./utilities/utilities.css") layer(utilities);
-@import url("./components/theme-toggle.css") layer(components);
+@import url("unit2/architecture-and-build/css//utilities/utilities.css") layer(utilities);
+@import url("unit2/architecture-and-build/css/components/theme-toggle.css") layer(components);
