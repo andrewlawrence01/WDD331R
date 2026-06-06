@@ -1,0 +1,48 @@
+.articles-page {
+    padding-block: var(--space-lg);
+    padding-inline: var(--space-lg);
+}
+
+.articles-page header {
+    text-align: center;
+    margin-block-end: var(--space-xl);
+}
+
+.articles-page .card-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(min(100%, 240px), 1fr)
+        );
+    gap: var(--space-lg);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-surface);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.card > div:first-child {
+    block-size: 180px;
+    background: var(--color-accent);
+}
+
+.card > div:last-child {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-block: var(--space-md);
+    padding-inline: var(--space-md);
+}
+
+.card p {
+    margin-block-end: var(--space-md);
+}
+
+.card a {
+    margin-block-start: auto;
+}
