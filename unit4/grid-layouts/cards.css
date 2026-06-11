@@ -46,3 +46,38 @@
 .card a {
     margin-block-start: auto;
 }
+
+.cards-grid {
+    display: grid;
+    gap: 1rem;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(250px, 1fr)
+    );
+
+    /* Shared row tracks */
+    grid-auto-rows: auto auto auto;
+
+    align-items: stretch;
+}
+
+@supports (grid-template-rows: subgrid) {
+
+    .cards-grid {
+        grid-template-rows:
+            auto
+            1fr
+            auto;
+    }
+
+    .card {
+        display: grid;
+
+        grid-row: span 3;
+
+        grid-template-rows: subgrid;
+
+        row-gap: 1rem;
+    }
+}
