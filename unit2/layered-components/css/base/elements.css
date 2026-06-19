@@ -40,3 +40,49 @@ ul {
 section {
   margin-block: var(--space-large);
 }
+
+@layer base {
+
+  body {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-family-heading);
+    line-height: var(--line-height-heading);
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: var(--font-size-display);
+    line-height: var(--line-height-display);
+  }
+
+  h2 {
+    font-size: var(--font-size-heading-lg);
+  }
+
+  h3 {
+    font-size: var(--font-size-heading-md);
+  }
+
+  h4 {
+    font-size: var(--font-size-heading-sm);
+  }
+
+  small {
+    font-size: var(--font-size-caption);
+  }
+
+  p,
+  li {
+    font-size: var(--font-size-body);
+  }
+}

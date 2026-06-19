@@ -34,3 +34,66 @@
             rgb(20 20 20 / 0.45)
         );
 }
+@layer tokens {
+  :root {
+    /* ========================================
+       FONT FAMILIES
+    ======================================== */
+
+    --font-family-body: system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", sans-serif;
+
+    --font-family-heading: "Poppins", system-ui, sans-serif;
+
+    /* ========================================
+       MODULAR SCALE
+       Base: 1rem (16px)
+       Ratio: 1.25 (Major Third)
+    ======================================== */
+
+    --font-size-xs: 0.8rem;
+    --font-size-sm: 0.875rem;
+
+    /* Body size */
+    --font-size-md: 1rem;
+
+    /* Fluid sizes */
+    --font-size-lg: clamp(1.25rem, 1.15rem + 0.5vw, 1.563rem);
+
+    --font-size-xl: clamp(1.563rem, 1.35rem + 1vw, 1.953rem);
+
+    --font-size-2xl: clamp(1.953rem, 1.7rem + 1.5vw, 2.441rem);
+
+    --font-size-3xl: clamp(2.441rem, 2rem + 2vw, 3.052rem);
+
+    /* ========================================
+       LINE HEIGHTS
+    ======================================== */
+
+    --line-height-body: 1.6;
+    --line-height-heading: 1.2;
+    --line-height-display: 1.1;
+
+    /* ========================================
+       SEMANTIC TYPOGRAPHY TOKENS
+    ======================================== */
+
+    --font-size-caption: var(--font-size-xs);
+
+    --font-size-body: var(--font-size-md);
+
+    --font-size-heading-sm: var(--font-size-lg);
+
+    --font-size-heading-md: var(--font-size-xl);
+
+    --font-size-heading-lg: var(--font-size-2xl);
+
+    --font-size-display: var(--font-size-3xl);
+
+    /* Legacy aliases if older files use them */
+
+    --text-small: var(--font-size-sm);
+    --text-base: var(--font-size-body);
+    --text-large: var(--font-size-heading-sm);
+  }
+}
