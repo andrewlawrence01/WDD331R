@@ -97,3 +97,10 @@
     --text-large: var(--font-size-heading-sm);
   }
 }
+:root {
+  --color-primary: #c1121f;
+  --color-secondary: #ffffff;
+  --color-text: #222;
+
+  accent-color: var(--color-primary);
+}
