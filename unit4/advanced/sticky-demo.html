@@ -5,45 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sticky Demo</title>
 
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/unit4/advanced/sticky-demo.css">
 </head>
+
 <body>
 
-<header>
-    <h1>Sticky Sidebar Demo</h1>
-</header>
+<div class="page">
 
-<main class="page-layout">
+<aside class="toc">
+    <h2>Contents</h2>
+    <ul>
+        <li>Intro</li>
+        <li>Section 1</li>
+        <li>Section 2</li>
+        <li>Section 3</li>
+    </ul>
+</aside>
 
-    <aside class="toc">
-        <h2>Contents</h2>
+<main class="content">
 
-        <ul>
-            <li>Section 1</li>
-            <li>Section 2</li>
-            <li>Section 3</li>
-            <li>Section 4</li>
-        </ul>
-    </aside>
+    <section>
+        <h2 class="sticky">Intro</h2>
+        <p>Scroll down to see sticky behavior...</p>
+    </section>
 
-    <section class="content">
+    <section>
+        <h2 class="sticky">Section 1</h2>
+        <p>Lorem ipsum dolor sit amet...</p>
+        <p style="height: 400px"></p>
+    </section>
 
-        <h2>Section 1</h2>
-        <p>Lorem ipsum...</p>
+    <section>
+        <h2 class="sticky">Section 2</h2>
+        <p style="height: 400px"></p>
+    </section>
 
-        <h2>Section 2</h2>
-        <p>Lorem ipsum...</p>
-
-        <h2>Section 3</h2>
-        <p>Lorem ipsum...</p>
-
-        <h2>Section 4</h2>
-        <p>Lorem ipsum...</p>
-
+    <section>
+        <h2 class="sticky">Section 3</h2>
+        <p style="height: 400px"></p>
     </section>
 
 </main>
+
+</div>
 
 </body>
 </html>

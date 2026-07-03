@@ -3,129 +3,57 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrew Lawrence – Practice Site</title>
+    <title>Andrew Lawrence – Portfolio</title>
+
+    <script src="/unit3/visual-effects/js/theme-preference.js"></script>
     <link rel="stylesheet" href="css/main.css">
-<details class="theme-menu">
-    <summary class="theme-control">
-        <span class="visually-hidden">
-            Color scheme
-        </span>
-    </summary>
-
-    <div
-        class="theme-extra"
-        role="group"
-        aria-label="Choose color scheme"
-    >
-        <label
-            class="theme-control theme-pick"
-            data-theme-pick="light"
-        >
-            <input
-                name="theme-preference"
-                type="radio"
-                value="light"
-            >
-
-            <span aria-hidden="true">
-                &#9788;&#65039;
-            </span>
-
-            <span class="visually-hidden">
-                Light
-            </span>
-        </label>
-
-        <label
-            class="theme-control theme-pick"
-            data-theme-pick="system"
-        >
-            <input
-                name="theme-preference"
-                type="radio"
-                value="system"
-                checked
-            >
-
-            <span aria-hidden="true">
-                &#9881;&#65039;
-            </span>
-
-            <span class="visually-hidden">
-                System default
-            </span>
-        </label>
-
-        <label
-            class="theme-control theme-pick"
-            data-theme-pick="dark"
-        >
-            <input
-                name="theme-preference"
-                type="radio"
-                value="dark"
-            >
-
-            <span aria-hidden="true">
-                &#127766;
-            </span>
-
-            <span class="visually-hidden">
-                Dark
-            </span>
-        </label>
-    </div>
-</details>
+    
 </head>
 
-<li>
-    <a href="unit-4/grid-layouts/editorial.html">
-        Editorial Layout
-    </a>
-</li>
-
-<li>
-    <a href="unit-4/grid-layouts/cards.html">
-        Responsive Card Grid
-    </a>
-</li>
-
-<section>
-    <h2>Unit 4 Advanced</h2>
-
-    <ul>
-        <li>
-            <a href="unit-4/grid-layouts/cards.html">
-                Updated Card Grid (Subgrid)
-            </a>
-        </li>
-
-        <li>
-            <a href="unit-4/advanced/container-demo.html">
-                Container Query Demo
-            </a>
-        </li>
-
-        <li>
-            <a href="unit-4/advanced/sticky-demo.html">
-                Sticky Demo
-            </a>
-        </li>
-    </ul>
-</section>
-
 <body>
-    <header>
-        <h1>Andrew Lawrence</h1>
-    </header>
+<header>
+    <h1>Andrew Lawrence</h1>
 
-    <main>
-        <p>
-            Welcome to my Practice Site for WDD 331R: Advanced CSS. This site will be used
-            throughout the semester to experiment with layouts, styling techniques, and
-            modern CSS features. As I progress, I will continue adding new pages and
-            improving the design.
-        </p>
-    </main>
+    <details class="theme-menu">
+        <summary class="theme-control">
+            <span class="visually-hidden">Color scheme</span>
+        </summary>
+
+        <div class="theme-extra" role="group">
+            <label class="theme-control theme-pick">
+                <input type="radio" name="theme-preference" value="light">
+                ☀️ <span class="visually-hidden">Light</span>
+            </label>
+
+            <label class="theme-control theme-pick">
+                <input type="radio" name="theme-preference" value="system" checked>
+                ⚙️ <span class="visually-hidden">System</span>
+            </label>
+
+            <label class="theme-control theme-pick">
+                <input type="radio" name="theme-preference" value="dark">
+                🌙 <span class="visually-hidden">Dark</span>
+            </label>
+        </div>
+    </details>
+</header>
+
+<nav>
+    <h2>Assignments</h2>
+    <ul>
+        <li><a href="/unit1/custom-properties/index.html">Custom Properties</a></li>
+        <li><a href="/unit2/layered-components/index.html">Layered Components</a></li>
+        <li><a href="/unit3/visual-effects/index.html">Visual Effects</a></li>
+        <li><a href="/unit4/grid-layouts/editorial.html">Editorial Layout</a></li>
+        <li><a href="/unit4/grid-layouts/cards.html">Card Grid</a></li>
+        <li><a href="/unit4/grid-layouts/cards.html">Cards (Subgrid Updated)</a></li>
+        <li><a href="/unit4/advanced/container-demo.html">Container Query Demo</a></li>
+        <li><a href="/unit4/advanced/sticky-demo.html">Sticky Module Demo</a></li>
+        <li><a href="/unit5/resume.html">Resume</a></li>
+        <li><a href="/unit5/contact.html">Contact</a></li>
+        <li><a href="/unit6/motion/index.html">Motion & Transitions</a></li>
+    </ul>
+</nav>
+
 </body>
 </html>

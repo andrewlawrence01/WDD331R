@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="js/theme-preference.js"></script>
+  <link rel="stylesheet" href="css/main.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Layered Components</title>
 
   <link rel="stylesheet" href="unit2/layered-components/css/main.css" />
+  <details class="theme-menu">
+    <summary class="theme-control">
+        <span class="visually-hidden">Color scheme</span>
+    </summary>
+
+    <div class="theme-extra" role="group" aria-label="Choose color scheme">
+        <label class="theme-control theme-pick" data-theme-pick="light">
+            <input name="theme-preference" type="radio" value="light">
+            <span aria-hidden="true">☀️</span>
+            <span class="visually-hidden">Light</span>
+        </label>
+
+        <label class="theme-control theme-pick" data-theme-pick="system">
+            <input name="theme-preference" type="radio" value="system" checked>
+            <span aria-hidden="true">⚙️</span>
+            <span class="visually-hidden">System</span>
+        </label>
+
+        <label class="theme-control theme-pick" data-theme-pick="dark">
+            <input name="theme-preference" type="radio" value="dark">
+            <span aria-hidden="true">🌘</span>
+            <span class="visually-hidden">Dark</span>
+        </label>
+    </div>
+</details>
 <details class="theme-menu">
     <summary class="theme-control">
         <span class="visually-hidden">

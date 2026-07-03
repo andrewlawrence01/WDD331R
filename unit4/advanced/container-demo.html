@@ -8,33 +8,36 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/unit4/advanced/container-demo.css">
 </head>
+
 <body>
 
-<header>
-    <h1>Container Query Demo</h1>
-</header>
+<main class="page">
 
-<main class="layout">
-
-    <section class="sidebar-container">
-        <div class="feature-card">
-            <img src="https://placehold.co/300x200" alt="Placeholder">
-            <div>
-                <h2>Sidebar Version</h2>
-                <p>This component adapts to its container.</p>
-            </div>
+    <section class="layout-wide">
+        <h2>Wide Context</h2>
+        <div class="container">
+            <article class="feature">
+                <img src="https://picsum.photos/seed/a/200/200" alt="">
+                <div>
+                    <h3>Adaptive Component</h3>
+                    <p>This layout changes in wide containers.</p>
+                </div>
+            </article>
         </div>
     </section>
 
-    <section class="main-container">
-        <div class="feature-card">
-            <img src="https://placehold.co/300x200" alt="Placeholder">
-            <div>
-                <h2>Main Content Version</h2>
-                <p>The same component becomes horizontal.</p>
-            </div>
+    <aside class="layout-narrow">
+        <h2>Narrow Context</h2>
+        <div class="container">
+            <article class="feature">
+                <img src="https://picsum.photos/seed/b/200/200" alt="">
+                <div>
+                    <h3>Adaptive Component</h3>
+                    <p>This layout stacks in narrow containers.</p>
+                </div>
+            </article>
         </div>
-    </section>
+    </aside>
 
 </main>
 

@@ -22,56 +22,70 @@
 body {
     font-family: var(--font-body);
     color: var(--color-text);
-    background-color: var(--color-bg);
+    background: var(--color-bg);
     line-height: 1.6;
     padding: var(--space-lg);
 }
 
-a {
-    color: var(--color-primary);
-}
-
-a:hover {
-    color: var(--color-primary-hover);
-}
-
-/* Optional small enhancement */
 header {
     margin-bottom: var(--space-lg);
 }
 
+nav {
+    margin-top: var(--space-lg);
+
+    h2 {
+        margin-bottom: var(--space-md);
+    }
+
+    ul {
+        padding-left: 1.5rem;
+    }
+}
+
+a {
+    color: var(--color-primary);
+
+    &:hover {
+        color: var(--color-primary-hover);
+    }
+}
+@layer tokens, base, components, utilities;
+
+@import url('tokens/colors.css') layer(tokens);
+@import url('tokens/variables.css') layer(tokens);
+
+@import url('base/reset.css') layer(base);
+@import url('base/elements.css') layer(base);
+
+@import url('components/theme-toggle.css') layer(components);
+@import url('components/buttons.css') layer(components);
+@import url('components/cards.css') layer(components);
+@import url('components/forms.css') layer(components);
+@import url('components/nav.css') layer(components);
+@import url('components/temples.css') layer(components);
+
+@import url('utilities/utilities.css') layer(utilities);
+
+@import url('layout/primary.css') layer(base);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 h1 {
-    margin-bottom: var(--space-md);
-}
-.resume {
-  max-width: 900px;
-  margin: auto;
-  padding: 2rem;
+    font-size: var(--font-size-display);
 }
 
-.resume-header {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.resume section {
-  margin-bottom: 2rem;
-}
-
-.experience {
-  padding: 1rem;
-  border-left: 4px solid var(--color-primary);
+h2 {
+    font-size: var(--font-size-heading-lg);
 }
 @media print {
-
   nav,
+  header nav,
+  footer,
   button,
-  footer {
-    display: none;
+  form {
+    display: none !important;
   }
 
   body {
-    font-family: Georgia, "Times New Roman", serif;
     font-size: 11pt;
     color: black;
     background: white;
@@ -82,19 +96,17 @@ h1 {
     font-size: 9pt;
   }
 
-  .experience {
-    break-inside: avoid;
+  h1, h2, h3 {
+    page-break-after: avoid;
   }
 
-  p,
-  li {
+  .job {
+    break-inside: avoid;
     orphans: 3;
     widows: 3;
   }
 
-  .resume-header,
-  .experience {
+  .resume-header {
     print-color-adjust: exact;
-    -webkit-print-color-adjust: exact;
   }
 }
