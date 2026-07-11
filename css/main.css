@@ -110,3 +110,5 @@ h2 {
     print-color-adjust: exact;
   }
 }
+
+@import url("unit2/layered-components/components/icons.css") layer(components);
