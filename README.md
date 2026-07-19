@@ -14,16 +14,16 @@ All color values in the site are derived from semantic tokens in `css/tokens/col
 ## Pages
 
 - [Home](index.html)
-- [Custom Properties and Nesting](/WDD331R/unit1/custom-properties/index.html)
-- [Layered Components](/WDD331R/unit2/layered-components/index.html)
-- [Visual Effects](/WDD331R/unit3/visual-effects/index.html)
-- [Editorial Layout](/WDD331R/unit4/grid-layouts/editorial.html)
-- [Card Grid](/WDD331R/unit4/grid-layouts/cards.html)
-- [Container Query Demo](/WDD331R/unit4/advanced/container-demo.html)
-- [Sticky Demo](/WDD331R/unit4/advanced/sticky-demo.html)
-- [Resume](/WDD331R/unit5/resume.html)
-- [Contact](/WDD331R/unit5/contact.html)
-- [Motion & Transitions](/WDD331R/unit6/motion/index.html)
+- [Custom Properties and Nesting](unit1/custom-properties/index.html)
+- [Layered Components](unit2/layered-components/index.html)
+- [Visual Effects](unit3/visual-effects/index.html)
+- [Editorial Layout](unit4/grid-layouts/editorial.html)
+- [Card Grid](unit4/grid-layouts/cards.html)
+- [Container Query Demo](unit4/advanced/container-demo.html)
+- [Sticky Demo](unit4/advanced/sticky-demo.html)
+- [Resume](unit5/resume.html)
+- [Contact](unit5/contact.html)
+- [Motion & Transitions](unit6/motion/index.html)
 
 ### Typography System
 
